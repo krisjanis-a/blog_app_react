@@ -1,0 +1,54 @@
+/* font-family: 'Kaisei HarunoUmi', serif;
+/* font-family: 'Lora', serif; */
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Oswald', sans-serif; */
+/* font-family: 'Source Sans Pro', sans-serif; */
+
+:root {
+  --main-font-color: #241f1f;
+  --background-footer-grey: rgb(68, 62, 60);
+  --orange-light: #db856b;
+  --orange-extra-light: #d49b89;
+  --orange-medium: #da5128;
+  --orange-bright: #e23804;
+}
+
+.footer {
+  background-color: var(--background-footer-grey);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1rem;
+}
+
+.footer_list {
+  flex: 6;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer_list_item {
+  line-height: 1.6rem;
+  font-size: 0.9rem;
+  font-weight: 300;
+  padding: 0 1rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.footer_credits_title {
+  font-size: 1.3rem;
+  padding: 2rem;
+  font-weight: 400;
+  font-family: "Oswald", sans-serif;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}

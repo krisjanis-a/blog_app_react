@@ -1,0 +1,61 @@
+.post {
+  width: 25rem;
+  margin: 1rem 3rem 1rem 2rem;
+}
+
+.post_image {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 0.75rem;
+}
+
+.post_info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: "Kaisei HarunoUmi", serif;
+}
+
+.post_category {
+  font-family: "Oswald", sans-serif;
+  color: rgb(255, 113, 61);
+  line-height: 1.25rem;
+  margin-top: 1rem;
+  margin-right: 0.75rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.post_title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.post_date {
+  font-family: "Lora", serif;
+  font-size: 0.85rem;
+  color: rgb(148, 148, 148);
+}
+
+.post_description {
+  font-family: "Kaisei HarunoUmi", serif;
+  font-size: 0.85rem;
+  color: #444;
+  line-height: 1.4rem;
+  margin-top: 1rem;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+
+.link {
+  text-decoration: none;
+  color: #333;
+}

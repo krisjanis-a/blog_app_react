@@ -1,0 +1,13 @@
+
+	<- React Blog SWA User Story ->
+
+Pages the app should have:
+
+	- About
+	- Create Post
+	- View Single Post
+	- View all posts / Home
+	- View posts by author / category
+	- User settings
+	- Login
+	- Register

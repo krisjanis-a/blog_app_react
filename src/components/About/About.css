@@ -1,0 +1,39 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.about_heading {
+  font-family: "Kaisei HarunoUmi", serif;
+  font-weight: 700;
+  color: #333;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #333;
+}
+
+.about_description {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: justify;
+  padding: 1rem;
+
+  font-family: "Lora", serif;
+}
+
+.about_description::first-letter {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.about_image_container {
+  border-radius: 2rem;
+  padding: 2rem 0;
+}
+
+.about_image_container > img {
+  width: 100%;
+  border-radius: 2rem;
+}
