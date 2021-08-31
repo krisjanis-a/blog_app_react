@@ -13,7 +13,7 @@ const Post = () => {
           <span className="post_category">Reservoirs</span>
           <span className="post_category">Animals</span>
         </div>
-        <Link className="link" to="/post">
+        <Link className="post_link" to="/post">
           <span className="post_title">Lorem ipsum dolor sit amet</span>
         </Link>
         <hr />
