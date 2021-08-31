@@ -4,4 +4,4 @@
 
 Currently only front end design and navigation are done.
 
-Github pages [link](https://krisjanis-a.github.io/blog_app_react/)
+View live site on [netlify](https://blog-react-nature.netlify.app/#/)
