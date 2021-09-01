@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.6c2da627.chunk.css",
-    "main.js": "/static/js/main.6271b6e8.chunk.js",
-    "main.js.map": "/static/js/main.6271b6e8.chunk.js.map",
+    "main.css": "/static/css/main.7ebd0b8e.chunk.css",
+    "main.js": "/static/js/main.de1139c5.chunk.js",
+    "main.js.map": "/static/js/main.de1139c5.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d94e04d9.js",
     "runtime-main.js.map": "/static/js/runtime-main.d94e04d9.js.map",
     "static/js/2.84fd308b.chunk.js": "/static/js/2.84fd308b.chunk.js",
     "static/js/2.84fd308b.chunk.js.map": "/static/js/2.84fd308b.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.6c2da627.chunk.css.map": "/static/css/main.6c2da627.chunk.css.map",
+    "static/css/main.7ebd0b8e.chunk.css.map": "/static/css/main.7ebd0b8e.chunk.css.map",
     "static/js/2.84fd308b.chunk.js.LICENSE.txt": "/static/js/2.84fd308b.chunk.js.LICENSE.txt",
     "static/media/trees-image-1.8315e090.jpg": "/static/media/trees-image-1.8315e090.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.d94e04d9.js",
     "static/js/2.84fd308b.chunk.js",
-    "static/css/main.6c2da627.chunk.css",
-    "static/js/main.6271b6e8.chunk.js"
+    "static/css/main.7ebd0b8e.chunk.css",
+    "static/js/main.de1139c5.chunk.js"
   ]
 }

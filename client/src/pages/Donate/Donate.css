@@ -1,0 +1,9 @@
+.donate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.donate h1 {
+  margin: 2rem;
+}

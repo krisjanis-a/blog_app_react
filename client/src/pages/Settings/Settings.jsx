@@ -1,4 +1,3 @@
-import Sidebar from "../../components/Sidebar/Sidebar";
 import "./Settings.css";
 
 const Settings = () => {
@@ -17,7 +16,7 @@ const Settings = () => {
               alt=""
               className="profile_picture"
             />
-            <label htmlFor="file_input">
+            <label className="settings_file_input" htmlFor="file_input">
               <i className="settings_profile_picture_icon far fa-user"></i>
             </label>
             <input type="file" id="file_input" style={{ display: "none" }} />
@@ -31,7 +30,6 @@ const Settings = () => {
           <button className="settings_submit">Update</button>
         </form>
       </div>
-      <Sidebar />
     </div>
   );
 };

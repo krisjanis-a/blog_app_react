@@ -7,12 +7,12 @@ const Header = () => {
       <div className="header_titles">
         <h3>A blog about</h3>
         <h2>Nature</h2>
-        <h3>
+        {/* <h3>
           {"{"} the site is not functional (yet) {"}"}
         </h3>
         <h3>
           {"{"} only front end navigation {"}"}
-        </h3>
+        </h3> */}
       </div>
       <img
         className="header_image"

@@ -6,6 +6,8 @@
 
 .settings {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .settings_wrapper {
@@ -14,6 +16,9 @@
 }
 
 .profile_picture {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
   height: 20rem;
   border-radius: 1rem;
   object-fit: cover;
@@ -40,12 +45,23 @@
 .settings_form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .settings_profile_picture {
+  /* width: 100%; */
+  position: relative;
   display: flex;
   align-items: center;
   margin: 1rem 0;
+}
+
+.settings_file_input {
+  position: absolute;
+  right: -50%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .settings_profile_picture_icon {
@@ -71,7 +87,7 @@
 }
 
 .settings_form > input {
-  width: 100%;
+  width: clamp(25rem, 50%, 50rem);
   color: #555;
   margin: 0.75rem 0;
   font-size: 1rem;
@@ -89,7 +105,7 @@
   width: 10rem;
   margin-top: 2rem;
   padding: 0.5rem;
-  font-size: 0.8rem;
+  font-size: 1rem;
   align-self: center;
   font-family: "Oswald", sans-serif;
   background-color: teal;

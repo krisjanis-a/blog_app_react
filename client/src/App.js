@@ -9,6 +9,10 @@ import Write from "./pages/Write/Write";
 import { HashRouter as Router, Route, Switch, Link } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import About from "./components/About/About";
+import { Contacts } from "./pages/Contacts/Contacts";
+import Donate from "./pages/Donate/Donate";
+import Resources from "./pages/Resources/Resources";
+import Help from "./pages/Help/Help";
 
 function App() {
   const user = true;
@@ -31,6 +35,18 @@ function App() {
           <Route path="/write">{user ? <Write /> : <Login />}</Route>
           <Route path="/post/">
             <Single />
+          </Route>
+          <Route path="/contacts">
+            <Contacts />
+          </Route>
+          <Route path="/donate">
+            <Donate />
+          </Route>
+          <Route path="/resources">
+            <Resources />
+          </Route>
+          <Route path="/help">
+            <Help />
           </Route>
         </Switch>
         <Footer />

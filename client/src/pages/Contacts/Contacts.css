@@ -1,0 +1,9 @@
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contacts h1 {
+  margin: 2rem;
+}
