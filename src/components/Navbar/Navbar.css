@@ -1,0 +1,127 @@
+:root {
+  --main-font-color: #241f1f;
+  --orange-light: #db856b;
+  --orange-extra-light: #d49b89;
+  --orange-medium: #da5128;
+  --orange-bright: #e23804;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  color: var(--main-font-color);
+  font-family: "Montserrat", sans-serif;
+  z-index: 100;
+}
+
+.navbar_logo_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar_logo {
+  height: 4rem;
+  padding-right: 1rem;
+  object-fit: scale-down;
+}
+
+.navbar_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar_list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  list-style-type: none;
+  color: var(--main-font-color);
+}
+
+.navbar_list_item {
+  padding: 0 1rem;
+}
+
+.navbar_list_item > a {
+  text-decoration: none;
+  color: var(--main-font-color);
+}
+
+.navbar_list_item:hover > a {
+  text-decoration: none;
+  color: var(--orange-medium);
+}
+
+.navbar_search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchbar {
+  font-family: "Montserrat", sans-serif;
+  border-radius: 0.5rem;
+  border-width: 0.1rem;
+  outline: none;
+  padding: 0.5rem;
+}
+
+.search_button {
+  margin-left: 0.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.search_button:hover .search_button_logo {
+  color: var(--orange-bright);
+}
+
+.search_button_logo {
+  color: rgb(68, 68, 68);
+}
+
+.navbar_user_container {
+  width: 3rem;
+  height: 3rem;
+  position: relative;
+  margin: 1rem;
+}
+
+.navbar_user_image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.navbar_user_info {
+  display: none;
+}
+
+.navbar_user_container:hover .navbar_user_info {
+  display: block;
+  position: absolute;
+  font-size: 0.8rem;
+  right: 0;
+  top: 110%;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #555;
+}

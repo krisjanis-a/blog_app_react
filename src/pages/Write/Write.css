@@ -1,0 +1,179 @@
+/* font-family: "Kaisei HarunoUmi", serif; */
+/* font-family: "Lora", serif; */
+/* font-family: "Montserrat", sans-serif; */
+/* font-family: "Oswald", sans-serif; */
+/* font-family: "Source Sans Pro", sans-serif; */
+
+.write {
+  padding-top: 3rem;
+}
+
+.write_image {
+  margin-left: 5rem;
+  width: 80%;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.write_image.no_image {
+  object-fit: contain;
+}
+
+.write_form {
+  position: relative;
+}
+
+.write_form_group {
+  margin-left: 5rem;
+  display: flex;
+  align-items: center;
+}
+
+.write_icon {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #555;
+  cursor: pointer;
+}
+
+.write_input {
+  font-size: 1.75rem;
+  border: none;
+  padding: 1.25rem;
+  width: 80%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #666;
+}
+
+.write_input:focus {
+  outline: none;
+}
+
+.write_text {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  resize: none;
+  font-size: 1.2rem;
+  height: 15rem;
+}
+
+.write_submit {
+  font-size: 1rem;
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  border: 1px solid #fff0;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  cursor: pointer;
+  background-color: var(--orange-medium);
+
+  font-family: "Oswald", sans-serif;
+  transition: 0.2s ease-out all;
+}
+
+.write_submit:hover {
+  border: 1px blue solid;
+  color: white;
+}
+
+/* CATEGORY DROPDOWN */
+
+.choose_category {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.dropdown_wrapper {
+  height: fit-content;
+}
+
+.category_dropdown {
+  display: none;
+  position: absolute;
+  background-color: #eee;
+  height: 9rem;
+  overflow-y: scroll;
+}
+
+.existing_categories {
+  list-style-type: none;
+}
+
+.category_dropdown_list_item {
+  cursor: pointer;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-top: 1px solid #3330;
+  border-bottom: 1px solid #3330;
+  font-family: "Montserrat", sans-serif;
+}
+
+.category_dropdown_list_item:hover {
+  font-weight: 600;
+  border-top: 1px solid #3335;
+  border-bottom: 1px solid #3335;
+}
+
+.dropdown_wrapper > i {
+  color: #666;
+  font-size: 1.5rem;
+}
+
+.dropdown_wrapper > i:hover {
+  color: #333;
+}
+
+.write_category {
+  color: #666;
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: "Kaisei HarunoUmi", serif;
+}
+
+.add_category {
+  color: white;
+  font-size: 0.85rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background-color: var(--orange-medium);
+  font-family: "Oswald", sans-serif;
+}
+
+.new_category {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: white;
+  background-color: teal;
+  display: inline;
+  padding: 0.75rem;
+  margin: 0 1rem;
+  border-radius: 1rem;
+}
+
+.new_category_delete {
+  display: none;
+  color: #aaa;
+  position: absolute;
+  background-color: white;
+  height: 1.5rem;
+  border-radius: 50%;
+  right: 0;
+  top: 0;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.new_category:hover .new_category_delete {
+  display: block;
+}

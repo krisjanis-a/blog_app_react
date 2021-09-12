@@ -1,0 +1,142 @@
+.single_post {
+  flex: 9;
+}
+
+.single_post_wrapper {
+  padding: 1.5rem;
+  padding-right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.single_post_image {
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.single_post_title {
+  text-align: center;
+  margin: 1rem;
+  font-size: 2rem;
+  font-family: "Oswald", sans-serif;
+}
+
+.single_post_title_input {
+  text-align: left;
+  margin: 1rem;
+  font-size: 2rem;
+  font-family: "Oswald", sans-serif;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgb(110, 110, 110);
+}
+
+.single_post_edit {
+  float: right;
+  font-size: 1.25rem;
+}
+
+.single_post_icon {
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+.single_post_icon:first-child {
+  color: teal;
+}
+
+.single_post_icon:last-child {
+  color: tomato;
+}
+
+.single_post_info {
+  margin-bottom: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9rem;
+
+  color: rgb(202, 108, 0);
+}
+
+.single_post_description {
+  color: #666;
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  font-family: "Lora", serif;
+  letter-spacing: 0.055rem;
+}
+
+.single_post_description::first-letter {
+  font-size: 1.75rem;
+}
+
+.single_post_description_input {
+  color: #666;
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  font-family: "Lora", serif;
+  letter-spacing: 0.055rem;
+  resize: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgb(110, 110, 110);
+}
+
+.link_single_post {
+  text-decoration: none;
+  color: inherit;
+}
+
+.single_post_update_button {
+  width: 6rem;
+  border: none;
+  border-radius: 0.75rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  align-self: flex-end;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  font-family: "Oswald", sans-serif;
+  background-color: teal;
+  color: white;
+}
+
+.single_post_categories {
+  display: flex;
+  justify-content: space-around;
+}
+
+.single_post_category {
+  font-family: "Oswald", sans-serif;
+  color: rgb(255, 113, 61);
+  line-height: 1.25rem;
+  margin-top: 1rem;
+  margin-right: 0.75rem;
+  font-size: 1rem;
+}
+
+.post_edit_buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.exit_edit_mode_button {
+  background: none;
+  border: none;
+  outline: none;
+  height: 2.5rem;
+  margin: 1.5rem 0 0 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.exit_edit_mode_button > i {
+  font-size: 1.5rem;
+  color: #666;
+}
