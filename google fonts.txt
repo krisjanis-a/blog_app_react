@@ -1,5 +1,0 @@
-font-family: 'Kaisei HarunoUmi', serif;
-font-family: 'Lora', serif;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Oswald', sans-serif;
-font-family: 'Source Sans Pro', sans-serif;

@@ -6,8 +6,9 @@ import axios from "axios";
 
 axios.defaults.baseURL = process.env.REACT_APP_BASE_URL;
 
-console.log(axios.defaults.baseURL);
-console.log(process.env.NODE_ENV);
+if (process.env.NODE_ENV === "production") {
+  axios.defaults.baseURL = "https://react-blog-free-world.herokuapp.com/api/";
+}
 
 ReactDOM.render(
   <React.StrictMode>
