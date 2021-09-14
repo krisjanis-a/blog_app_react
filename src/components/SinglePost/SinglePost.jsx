@@ -8,13 +8,16 @@ const SinglePost = () => {
   const location = useLocation();
   const path = location.pathname.split("/")[2];
   const [post, setPost] = useState({});
-  const PublicFolder = "http://localhost:5000/images/";
   const { user } = useContext(Context);
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [categories, setCategories] = useState([]);
   const [updateMode, setUpdateMode] = useState(false);
   const [previousData, setPreviousData] = useState([title, description]);
+
+  // const PublicFolder = "http://localhost:5000/images/";
+  const PublicFolder =
+    "https://res.cloudinary.com/dqgny4f47/image/upload/free-world-blog-images/";
 
   useEffect(() => {
     const getPost = async () => {

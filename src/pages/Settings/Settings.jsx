@@ -12,7 +12,9 @@ const Settings = () => {
   const [success, setSuccess] = useState(false);
 
   const { user, dispatch } = useContext(Context);
-  const PublicFolder = "http://localhost:5000/images/";
+  // const PublicFolder = "http://localhost:5000/images/";
+  const PublicFolder =
+    "https://res.cloudinary.com/dqgny4f47/image/upload/free-world-blog-images/";
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -46,7 +48,7 @@ const Settings = () => {
     }
     try {
       const res = await axios.put("/users/" + user._id, updatedUser);
-      console.log(res);
+      // console.log(res);
       setSuccess(true);
       dispatch({ type: "UPDATE_SUCCESS", payload: res.data });
     } catch (err) {
@@ -64,13 +66,14 @@ const Settings = () => {
       password: enteredPassword,
     };
 
-    console.log(localStorage);
+    // console.log(localStorage);
 
     try {
-      const res = await axios.delete("/users/" + user._id, {
+      // const res =
+      await axios.delete("/users/" + user._id, {
         data: { userId: userDel.userId, password: userDel.password },
       });
-      console.log(res);
+      // console.log(res);
       handleLogout();
     } catch (err) {
       console.log(err);
@@ -191,6 +194,7 @@ const Settings = () => {
             </label>
             <input
               type="file"
+              name="image"
               id="file_input"
               style={{ display: "none" }}
               onChange={(e) => setFile(e.target.files[0])}

@@ -2,7 +2,9 @@ import { Link } from "react-router-dom";
 import "./Post.css";
 
 const Post = ({ post }) => {
-  const PublicFolder = "http://localhost:5000/images/";
+  // const PublicFolder = "http://localhost:5000/images/";
+  const PublicFolder =
+    "https://res.cloudinary.com/dqgny4f47/image/upload/free-world-blog-images/";
 
   return (
     <div className="post" key={post._id}>

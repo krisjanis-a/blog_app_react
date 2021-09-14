@@ -7,7 +7,9 @@ import noUserImage from "../../assets/no-user.png";
 
 const Navbar = () => {
   const { user, dispatch } = useContext(Context);
-  const PublicFolder = "http://localhost:5000/images/";
+  // const PublicFolder = "http://localhost:5000/images/";
+  const PublicFolder =
+    "https://res.cloudinary.com/dqgny4f47/image/upload/free-world-blog-images/";
 
   // if (user) {
   //   console.log(user.profilePicture);
