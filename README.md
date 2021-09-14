@@ -4,4 +4,4 @@
 
 Currently only front end design and navigation are done.
 
-View live site on [netlify](https://blog-react-nature.netlify.app/#/)
+View live site on [netlify](https://free-world-blog.netlify.app/)
