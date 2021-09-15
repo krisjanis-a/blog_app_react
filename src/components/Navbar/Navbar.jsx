@@ -1,5 +1,5 @@
 import "./Navbar.css";
-import logo from "../../assets/maple-leaf-logo.png";
+import logo from "../../assets/scales-logo.png";
 import { Link } from "react-router-dom";
 import React, { useContext } from "react";
 import { Context } from "../../context/Context";
@@ -23,8 +23,8 @@ const Navbar = () => {
       <div className="navbar_logo_container">
         <img className="navbar_logo" src={logo} alt="Blog Website Logo" />
         <div className="navbar_blog_title">
-          <h2>Amazing</h2>
-          <h1>Wilderness</h1>
+          <h2>Free</h2>
+          <h1>World</h1>
         </div>
       </div>
       <div className="navbar_menu">

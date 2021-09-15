@@ -17,16 +17,16 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="sidebar_item">
-        <span className="sidebar_title">OUR MISSION</span>
+        <span className="sidebar_title">MISSION</span>
         <img
           className="sidebar_image"
           src="https://images.unsplash.com/photo-1511208687438-2c5a5abb810c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=972&q=80"
           alt=""
         />
         <p>
-          The aim of this blog is to inform, educate and entertain people with
-          stories and facts about nature, reservoirs, natural parks and more.
-          Create an account and share your experiences and tales!
+          The aim of this blog is to share ideas and stories about life,
+          philosophy, freedom and other topics that promote intelectual growth
+          and progress of humanity.
         </p>
       </div>
       <div className="sidebar_item">

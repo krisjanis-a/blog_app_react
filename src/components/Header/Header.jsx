@@ -5,8 +5,8 @@ const Header = () => {
   return (
     <div className="header">
       <div className="header_titles">
-        <h3>A blog about</h3>
-        <h2>Nature</h2>
+        <h3>A Blog about</h3>
+        <h2>Life | Ideas | Freedom</h2>
         {/* <h3>
           {"{"} the site is not functional (yet) {"}"}
         </h3>
