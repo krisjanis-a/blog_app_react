@@ -32,5 +32,32 @@
   width: 100%;
   height: 20rem;
   object-fit: cover;
-  object-position: top;
+  object-position: center 25%;
+}
+
+@media screen and (max-width: 750px) {
+  .header_titles h3 {
+    font-size: 1.5rem;
+  }
+
+  .header_titles h2 {
+    font-size: 3rem;
+    white-space: nowrap;
+  }
+  .header_image {
+    height: 15rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .header_titles h3 {
+    font-size: 1.2rem;
+  }
+
+  .header_titles h2 {
+    font-size: 2rem;
+  }
+  .header_image {
+    height: 10rem;
+  }
 }

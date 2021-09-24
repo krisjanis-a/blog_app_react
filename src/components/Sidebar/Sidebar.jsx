@@ -26,7 +26,7 @@ const Sidebar = () => {
         <p>
           The aim of this blog is to share ideas and stories about life,
           philosophy, freedom and other topics that promote intelectual growth
-          and progress of humanity.
+          and progress.
         </p>
       </div>
       <div className="sidebar_item">

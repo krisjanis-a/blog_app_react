@@ -1,0 +1,32 @@
+.mobile_navlist {
+  position: relative;
+}
+.mobile_navbar_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  list-style-type: none;
+  color: var(--main-font-color);
+  font-size: 1rem;
+  position: absolute;
+  right: 0;
+  background-color: white;
+  border: #333 1px solid;
+  transition: 0.25s ease-in;
+}
+
+.mobile_navbar_list_item {
+  padding: 1rem 1rem;
+}
+
+.mobile_navbar_list_item {
+  text-decoration: none;
+  color: var(--main-font-color);
+}
+
+.mobile_navbar_list_item:hover {
+  text-decoration: none;
+  color: var(--orange-medium);
+}

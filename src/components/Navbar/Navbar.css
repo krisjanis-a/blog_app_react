@@ -62,39 +62,6 @@
   color: var(--orange-medium);
 }
 
-.navbar_search {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.searchbar {
-  font-family: "Montserrat", sans-serif;
-  border-radius: 0.5rem;
-  border-width: 0.1rem;
-  outline: none;
-  padding: 0.5rem;
-}
-
-.search_button {
-  margin-left: 0.25rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  border: none;
-  background: none;
-  cursor: pointer;
-}
-
-.search_button:hover .search_button_logo {
-  color: var(--orange-bright);
-}
-
-.search_button_logo {
-  color: rgb(68, 68, 68);
-}
-
 .navbar_user_container {
   width: 3rem;
   height: 3rem;
@@ -124,4 +91,33 @@
   border-radius: 1rem;
   padding: 0.5rem;
   border: 1px solid #555;
+}
+
+.toggle_navlist {
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .navbar_list {
+    display: none;
+  }
+
+  .toggle_navlist {
+    display: block;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .navbar_logo {
+    height: 3rem;
+    padding-right: 1rem;
+    object-fit: scale-down;
+  }
+
+  .navbar_blog_title h1 {
+    font-size: 1.5rem;
+  }
+  .navbar_blog_title h2 {
+    font-size: 1.2rem;
+  }
 }

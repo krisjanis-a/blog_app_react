@@ -6,19 +6,13 @@ const Header = () => {
     <div className="header">
       <div className="header_titles">
         <h3>A Blog about</h3>
-        <h2>Life | Ideas | Freedom</h2>
-        {/* <h3>
-          {"{"} the site is not functional (yet) {"}"}
-        </h3>
-        <h3>
-          {"{"} only front end navigation {"}"}
-        </h3> */}
+        <h2>Life &amp; Ideas</h2>
       </div>
       <img
         className="header_image"
         // src={image1}
-        src="https://images.unsplash.com/photo-1426170042593-200f250dfdaf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=889&q=80"
-        alt="Big tree"
+        src="https://images.unsplash.com/photo-1619450535979-6939a4690888?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1332&q=80"
+        alt="Embers and fire"
       />
     </div>
   );

@@ -16,7 +16,7 @@ const Footer = () => {
         </Link>
       </ul>
 
-      <h3 className="footer_credits_title">Free World - Blog © 2021</h3>
+      <h3 className="footer_credits_title">Free Minds - Blog © 2021</h3>
     </div>
   );
 };
