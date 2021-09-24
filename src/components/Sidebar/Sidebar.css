@@ -8,7 +8,7 @@
   align-items: center;
 
   font-family: "Lora", serif;
-  color: #222222;
+  color: #444;
   z-index: 10;
 }
 
@@ -55,6 +55,11 @@
   padding: 0.25rem;
 }
 
+.sidebar_list_item:hover {
+  font-weight: 600;
+  color: #222;
+}
+
 .sidebar_social_icons {
   margin-top: 1rem;
   display: flex;
@@ -66,6 +71,11 @@
   padding: 0 0.5rem;
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+.sidebar_icon:hover {
+  font-weight: 600;
+  color: #222;
 }
 
 .link_sidebar {

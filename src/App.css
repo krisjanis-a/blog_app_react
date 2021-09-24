@@ -6,6 +6,24 @@
   --orange-bright: #e23804;
   --custom-grey-1: rgb(74, 71, 68);
   --custom-grey-2: rgb(44, 42, 40);
+  --custom-grey-3: rgb(30, 29, 27);
+}
+
+/* font-family: 'Kaisei HarunoUmi', serif;
+/* font-family: 'Lora', serif; */
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Oswald', sans-serif; */
+/* font-family: 'Source Sans Pro', sans-serif; */
+
+html {
+  background-color: var(--custom-grey-3);
+}
+
+body {
+  max-width: 1600px;
+  margin: 0 auto;
+  position: relative;
+  background-color: white;
 }
 
 body::-webkit-scrollbar {

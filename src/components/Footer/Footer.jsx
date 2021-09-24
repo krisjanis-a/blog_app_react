@@ -8,12 +8,6 @@ const Footer = () => {
         <Link className="link" to="/settings">
           <li className="footer_list_item">Settings</li>
         </Link>
-        <Link className="link" to="/help">
-          <li className="footer_list_item">Help</li>
-        </Link>
-        <Link className="link" to="/contacts">
-          <li className="footer_list_item">Contacts</li>{" "}
-        </Link>
       </ul>
 
       <h3 className="footer_credits_title">Free Minds - Blog © 2021</h3>

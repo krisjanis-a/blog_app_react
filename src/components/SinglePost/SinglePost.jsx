@@ -51,6 +51,16 @@ const SinglePost = () => {
     } catch (err) {}
   };
 
+  const showDeletePrompt = () => {
+    let deletePromptMessage = document.querySelector(".delete_post_prompt");
+    deletePromptMessage.classList.remove("hidden");
+  };
+
+  const hideDeletePrompt = () => {
+    let deletePromptMessage = document.querySelector(".delete_post_prompt");
+    deletePromptMessage.classList.add("hidden");
+  };
+
   return (
     <div className="single_post">
       <div className="single_post_wrapper">
@@ -84,10 +94,31 @@ const SinglePost = () => {
                     setPreviousData([title, description]);
                   }}
                 ></i>
-                <i
-                  className="single_post_icon fas fa-trash-alt"
-                  onClick={handleDelete}
-                ></i>
+                <div className="delete_post_dialog">
+                  <i
+                    className="single_post_icon delete fas fa-trash-alt"
+                    onClick={showDeletePrompt}
+                  ></i>
+                  <div className="delete_post_prompt hidden">
+                    <span>Would you like to delete this post?</span>
+                    <div className="delete_post_buttons">
+                      <button
+                        type="button"
+                        id="delete_yes"
+                        onClick={handleDelete}
+                      >
+                        Yes
+                      </button>
+                      <button
+                        type="button"
+                        id="delete_no"
+                        onClick={hideDeletePrompt}
+                      >
+                        No
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </div>
             )}
           </h1>

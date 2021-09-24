@@ -1,20 +1,5 @@
-/* font-family: 'Kaisei HarunoUmi', serif;
-/* font-family: 'Lora', serif; */
-/* font-family: 'Montserrat', sans-serif; */
-/* font-family: 'Oswald', sans-serif; */
-/* font-family: 'Source Sans Pro', sans-serif; */
-
-:root {
-  --main-font-color: #241f1f;
-  --background-footer-grey: rgb(68, 62, 60);
-  --orange-light: #db856b;
-  --orange-extra-light: #d49b89;
-  --orange-medium: #da5128;
-  --orange-bright: #e23804;
-}
-
 .footer {
-  background-color: var(--background-footer-grey);
+  background-color: var(--custom-grey-2);
   color: white;
   display: flex;
   flex-direction: column;
@@ -39,6 +24,10 @@
   font-weight: 300;
   padding: 0 1rem;
   font-family: "Montserrat", sans-serif;
+}
+
+.footer_list_item:hover {
+  font-weight: 400;
 }
 
 .footer_credits_title {
