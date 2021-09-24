@@ -3,6 +3,9 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import { ContextProvider } from "./context/Context";
 import axios from "axios";
+// import winSize from "./log_viewport_size.js";
+
+// window.onresize = winSize;
 
 axios.defaults.baseURL = process.env.REACT_APP_BASE_URL;
 

@@ -26,7 +26,7 @@ const Home = () => {
       <Header />
       <div className="home">
         <Posts posts={posts} />
-        <Sidebar />
+        <Sidebar display={"home"} />
       </div>
     </>
   );

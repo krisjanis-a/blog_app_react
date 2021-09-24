@@ -106,7 +106,7 @@ const Write = () => {
         <img src={noImage} alt="" className="write_image no_image" />
       )}
       <form className="write_form" onSubmit={handleSubmit}>
-        <div className="write_form_group">
+        <div className="write_form_group wfg_file_title">
           <label htmlFor="file_input">
             <i className="write_icon far fa-plus-square"></i>
           </label>
@@ -125,7 +125,7 @@ const Write = () => {
             onChange={(e) => setTitle(e.target.value)}
           />
         </div>
-        <div className="write_form_group">
+        <div className="write_form_group wfg_category">
           <div className="choose_category">
             <div className="dropdown_wrapper">
               <i
@@ -182,7 +182,7 @@ const Write = () => {
             ))}
           </div>
         </div>
-        <div className="write_form_group">
+        <div className="write_form_group wfg_text">
           <textarea
             placeholder="What is on your mind?"
             type="text"

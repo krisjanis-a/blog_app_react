@@ -16,7 +16,7 @@ const Navbar = () => {
   //   console.log(user.profilePicture);
   // }
 
-  const [showNavMenu, setShowNavMenu] = useState(false);
+  const [showNavMenu, setShowNavMenu] = useState(true);
 
   useEffect(() => {
     if (!showNavMenu) {

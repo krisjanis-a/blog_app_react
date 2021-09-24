@@ -62,6 +62,8 @@
   border: 1px solid #555;
   border-radius: 1rem;
   padding: 0.5rem;
+  background-color: white;
+  z-index: 10;
 }
 
 .delete_account_prompt.hidden {
@@ -107,6 +109,7 @@
   border: 1px solid #555;
   border-radius: 1rem;
   padding: 0.5rem;
+  z-index: 10;
 }
 
 .delete_password_prompt.hidden {
@@ -230,4 +233,58 @@
   font-size: 1rem;
   font-family: "Oswald", sans-serif;
   margin-top: 1rem;
+}
+
+@media screen and (max-width: 550px) {
+  .settings_title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .settings_update_title {
+    text-align: center;
+  }
+
+  .settings_profile_picture {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .settings_file_input {
+    position: relative;
+    display: flex;
+    left: 0;
+    top: 0;
+    transform: translateY(0%);
+    margin: 0.5rem 0;
+  }
+
+  .settings_profile_picture_icon {
+    margin-left: 0;
+  }
+
+  .settings_form > input {
+    width: 90%;
+    color: #555;
+    margin: 0.75rem 0;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 1px #333 solid;
+
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .delete_account_prompt {
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .delete_password_prompt {
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min-content;
+  }
 }

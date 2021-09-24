@@ -1,11 +1,3 @@
-:root {
-  --main-font-color: #241f1f;
-  --orange-light: #db856b;
-  --orange-extra-light: #d49b89;
-  --orange-medium: #da5128;
-  --orange-bright: #e23804;
-}
-
 .navbar {
   position: sticky;
   top: 0;

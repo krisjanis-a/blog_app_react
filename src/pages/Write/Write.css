@@ -59,25 +59,45 @@
   resize: none;
   font-size: 1.2rem;
   height: 15rem;
+  margin: 1rem 0;
+}
+
+.write_text::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.write_text::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0.75rem var(--custom-grey-1);
+}
+
+.write_text::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    90deg,
+    var(--custom-grey-2),
+    var(--custom-grey-1),
+    var(--custom-grey-2)
+  );
+  border-radius: 0.5rem;
 }
 
 .write_submit {
   font-size: 1rem;
-  position: absolute;
-  right: 10%;
-  top: 10%;
+  position: relative;
+  bottom: 10%;
+  float: right;
+  right: 3rem;
   border: 1px solid #fff0;
   border-radius: 0.5rem;
   padding: 1rem;
   cursor: pointer;
   background-color: var(--orange-medium);
+  margin: 1rem auto;
 
   font-family: "Oswald", sans-serif;
   transition: 0.2s ease-out all;
 }
 
 .write_submit:hover {
-  border: 1px blue solid;
   color: white;
 }
 
@@ -88,6 +108,7 @@
   display: flex;
   align-items: center;
   margin-right: 1rem;
+  min-width: 16rem;
 }
 
 .dropdown_wrapper {
@@ -100,6 +121,24 @@
   background-color: #eee;
   height: 9rem;
   overflow-y: scroll;
+}
+
+.category_dropdown::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.category_dropdown::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0.75rem var(--custom-grey-1);
+}
+
+.category_dropdown::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    90deg,
+    var(--custom-grey-2),
+    var(--custom-grey-1),
+    var(--custom-grey-2)
+  );
+  border-radius: 0.5rem;
 }
 
 .existing_categories {
@@ -156,7 +195,7 @@
   background-color: teal;
   display: inline;
   padding: 0.75rem;
-  margin: 0 1rem;
+  margin: 0.5rem 1rem;
   border-radius: 1rem;
 }
 
@@ -176,4 +215,54 @@
 
 .new_category:hover .new_category_delete {
   display: block;
+}
+
+.chosen_categories {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 600px) {
+  .write {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .write_image {
+    margin: 2rem;
+    left: 50%;
+    width: 80%;
+    height: 15rem;
+    object-fit: cover;
+    border-radius: 1rem;
+  }
+  .write_submit {
+    position: relative;
+    margin: 1rem auto;
+    float: none;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+  }
+
+  .write_form_group {
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .wfg_file_title {
+    justify-content: flex-start;
+  }
+
+  .wfg_text {
+    justify-content: center;
+  }
+
+  .write_text {
+    width: 100%;
+    height: 10rem;
+    border-bottom: 1px solid var(--custom-grey-1);
+  }
 }

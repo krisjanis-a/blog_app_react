@@ -1,0 +1,27 @@
+:root {
+  --main-font-color: #241f1f;
+  --orange-light: #db856b;
+  --orange-extra-light: #d49b89;
+  --orange-medium: #da5128;
+  --orange-bright: #e23804;
+  --custom-grey-1: rgb(74, 71, 68);
+  --custom-grey-2: rgb(44, 42, 40);
+}
+
+body::-webkit-scrollbar {
+  width: 1rem;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 0.75rem var(--custom-grey-1);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(
+    90deg,
+    var(--custom-grey-2),
+    var(--custom-grey-1),
+    var(--custom-grey-2)
+  );
+  border-radius: 0.5rem;
+}

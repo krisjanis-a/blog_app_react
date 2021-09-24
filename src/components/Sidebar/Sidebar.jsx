@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Sidebar.css";
 
-const Sidebar = () => {
+const Sidebar = ({ display }) => {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
@@ -15,8 +15,8 @@ const Sidebar = () => {
   }, []);
 
   return (
-    <div className="sidebar">
-      <div className="sidebar_item">
+    <div className={`sidebar ${display}`}>
+      <div className="sidebar_item sidebar_item_1">
         <span className="sidebar_title">MISSION</span>
         <img
           className="sidebar_image"
@@ -29,7 +29,7 @@ const Sidebar = () => {
           and progress.
         </p>
       </div>
-      <div className="sidebar_item">
+      <div className="sidebar_item  sidebar_item_2">
         <span className="sidebar_title">CATEGORIES</span>
         <ul className="sidebar_list">
           {categories.map((category) => (
@@ -45,7 +45,7 @@ const Sidebar = () => {
           ))}
         </ul>
       </div>
-      <div className="sidebar_item">
+      <div className="sidebar_item sidebar_item_3">
         <span className="sidebar_title">FOLLOW US</span>
         <div className="sidebar_social_icons">
           <i className="sidebar_icon fab fa-facebook"></i>
