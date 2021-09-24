@@ -121,6 +121,7 @@
   background-color: #eee;
   height: 9rem;
   overflow-y: scroll;
+  z-index: 10;
 }
 
 .category_dropdown::-webkit-scrollbar {
@@ -258,6 +259,10 @@
 
   .wfg_text {
     justify-content: center;
+  }
+
+  .wfg_category {
+    flex-direction: column;
   }
 
   .write_text {
