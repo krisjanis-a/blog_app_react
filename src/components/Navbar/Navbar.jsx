@@ -16,10 +16,10 @@ const Navbar = () => {
   //   console.log(user.profilePicture);
   // }
 
-  const [showNavMenu, setShowNavMenu] = useState(true);
+  const [showNavMenu, setShowNavMenu] = useState(false);
 
   useEffect(() => {
-    if (!showNavMenu) {
+    if (showNavMenu) {
       window.addEventListener("click", toggleNavMenu);
       window.addEventListener("resize", toggleNavMenu);
       return () => {
@@ -48,11 +48,6 @@ const Navbar = () => {
       <div className="navbar_menu">
         <div className="toggle_navlist">
           {showNavMenu ? (
-            <i
-              className="toggle_navlist_button fas fa-bars"
-              onClick={toggleNavMenu}
-            ></i>
-          ) : (
             <>
               <i
                 className="toggle_navlist_button fas fa-times"
@@ -60,6 +55,11 @@ const Navbar = () => {
               ></i>
               <NavList />
             </>
+          ) : (
+            <i
+              className="toggle_navlist_button fas fa-bars"
+              onClick={toggleNavMenu}
+            ></i>
           )}
         </div>
         <ul className="navbar_list">
