@@ -1,7 +1,7 @@
 # Blog Website using React JS
 
-## Development progress
+Blog site built with React, Express, NodeJS and MongoDB
 
-Currently only front end design and navigation are done.
+![Site home screen preview](/blog-site_screenshot.PNG)
 
-View live site on [netlify](https://free-world-blog.netlify.app/)
+View live site on [netlify](https://free-minds-blog.netlify.app/)
